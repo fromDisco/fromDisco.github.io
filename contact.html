@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>07 - Flexible Boxes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+      <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Fira+Sans:400,700" rel="stylesheet">    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body class="kontakt">
+  <div class="wrapper">
+    <div class="flexbox">
+    <!-- HEADER -->
+      <header role="banner" class="pageheader">
+        <div class="backToStart">
+          <h1 id="headhead">
+            <a href="07_index.html">fromDisco</a>
+          </h1>
+          <p class="slogan">wants to learn from udacity</p>
+        </div>
+      </header>
+      <!-- header -->
+
+      <!-- NAVGATION -->
+        <nav role="navigation" id="nav" class="navmain">
+          <h2 class="hideme">Navigation</h2>
+          <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="examples.html">Examples</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      <!-- navigation -->
+    </div>
+  <!-- MAIN -->
+      <main role="main" aria-labelledby="content">
+        <section id="content">
+          <header class="home">
+            <h2>Contact</h2>
+            <p class="pageintro">Same here. Just styling. Not working.</p>
+          </header>
+
+          <!-- FORMULAR -->
+            <form id="kontaktformular" class="kontaktformular" action="#">
+            <div class="name">
+              <label for="name">Ihr Name: </label>
+              <input id="name"
+                     type="text"
+                     name="name"
+                     placeholder="Name"
+                     required>
+            </div>
+            <div class="gender">
+              <label>Geschlecht:</label>
+              <input id="male"
+                     type="radio"
+                     name="gender"
+                     required>
+              <label for="male" class="radiolabel">Männlich</label>
+              <input id="female"
+                     type="radio"
+                     name="gender"
+                     required>
+              <label for="female" class="radiolabel">Weiblich</label>
+            </div>
+            <div class="email">
+              <label for="email">Email-Adresse:</label>
+              <input id="email"
+                     type="email"
+                     name="email"
+                     placeholder="Email"
+                     required>
+            </div>
+            <div class="message">
+              <label for="message">Ihre Nachricht</label>
+              <textarea id="message"
+                        placeholder="test"></textarea>
+            </div>
+            <input type="submit" class="submit" name="submit" value="Senden">
+            <input type="reset" class="reset" name="reset" value="Nochmal">
+          </form>
+        <!-- formular   -->
+        </section>
+      </main>
+  <!-- main -->
+  <!-- FOOTER -->
+    <footer role="contentinfo">
+        <address>
+          <!-- <p>Proudly presententet vom Michel.</p> -->
+        </address>
+        <small>Copyright &copy; <time datetime="2016">2017</time></small>
+    </footer>
+  </div>
+  <!-- footer -->
+</body>
+</html>

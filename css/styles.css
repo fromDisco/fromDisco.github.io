@@ -1,0 +1,360 @@
+/* ---------------------------------------------------------
+   HTML5 Bones
+   This stylesheet contains print styling and a section for
+   you to simply add your own. This is a basic template
+   after all.
+   ---------------------------------------------------------*/
+    body {
+
+    }
+    /* Default link styling */
+    /*a:link { color: #222; }*/
+    a:link { color: white; }
+    a:hover, a:focus { color: #333; }
+    a:visited { color: white; }
+    a:active { color: #500; }
+
+
+
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+    html {
+      /*width: 100%;
+      height: 100%;*/
+      box-sizing: border-box;
+      background: linear-gradient(322deg, #43AA80, #B10033, #009CFF);
+      background-size: 400% 400%;
+      -webkit-animation: Gradient 100s ease infinite;
+      -moz-animation: Gradient 100s ease infinite;
+      animation: Gradient 100s ease infinite;
+      color: #eee;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 300;
+      overflow-y: scroll;
+      font-size: 18px;
+    }
+
+      @-webkit-keyframes Gradient {
+      	0% { background-position: 0% 50% }
+      	50% {	background-position: 100% 50% }
+      	100% { background-position: 0% 50% }
+      }
+
+      @-moz-keyframes Gradient {
+      	0% { background-position: 0% 50% }
+      	50% {	background-position: 100% 50% }
+      	100% { background-position: 0% 50% }
+      }
+
+      @keyframes Gradient {
+      	0% { background-position: 0% 50% }
+      	50% {	background-position: 100% 50% }
+      	100% { background-position: 0% 50% }
+      }
+
+      .wrapper {
+        width: 620px;
+        margin: auto;
+        padding: 2rem 0;
+      }
+
+      body {
+        box-sizing: border-box;
+        width: 97%;
+        min-width: 720px;
+        min-height: 100vh;
+        margin: 0 auto;
+        background: #333;
+      }
+
+      .flexbox {
+        display: flex;
+        flex-direction: column;
+      }
+
+/*HEADER*/
+      .pageheader {
+        /*text-align: center;*/
+      }
+
+      #headhead {
+        margin: 0.3rem auto 0;
+        letter-spacing: 2px;
+        background: linear-gradient(322deg, #43AA80, #B10033, #009CFF);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 100s ease infinite;
+        -moz-animation: Gradient 100s ease infinite;
+        animation: Gradient 100s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: brightness(130%) saturate(210%);
+          }
+
+      .backToStart {
+        padding-bottom: 0.1rem;
+      }
+
+      .slogan {
+        margin: 0 auto;
+      }
+/*header*/
+
+/*NAVIGATION*/
+      .navmain {
+        flex: 0 0 auto;
+        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        width: 60%;
+        margin-top: -0.6rem;
+        border-top: 1px solid white;
+      }
+
+      .navlist {
+        display: flex;
+        list-style-type: none;
+        padding: 0.5rem 0 0 0;
+        margin: 0.3rem 0 0 0;
+        font-family: "Fira Sans", sans-serif;
+        letter-spacing: 1px;
+      }
+
+      .navlist li {
+        display: inline-block;
+        padding: 0 1.45rem;
+        font-size: 0.8rem;
+      }
+
+        .navlist li:last-child {
+          padding-right: 0;
+        }
+
+      li .active {
+        font-weight: 700;
+        filter: brightness(130%) saturate(210%);
+        background: linear-gradient(322deg, #43AA80, #B10033, #009CFF);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 100s ease infinite;
+        -moz-animation: Gradient 100s ease infinite;
+        animation: Gradient 100s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+/*navigation*/
+/*MAIN*/
+      main {
+        margin: 2rem 0;
+        max-width: 660px;
+      }
+
+/*main*/
+      main .home {
+        margin: 1rem 0 2.5rem -5rem;
+      }
+
+      main .home h2 {
+        font-size: 1.3rem;
+      }
+
+      main .home p {
+        margin: 0 0 0 5rem;
+        font-family: 'Fira Sans', helvetica, sans-serif;
+      }
+
+      main .home h2:last-child {
+        margin-top: -0.15rem;
+      }
+
+
+      h1, h2, h3 {
+        margin: 2rem 0 0;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      h1 a {
+        font-weight: 700;
+      }
+
+      h2 {
+        /*display: table;*/
+        margin-top: 2rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      .highlight {
+        font-weight: 700;
+        background: linear-gradient(322deg, #43AA80, #B10033, #009CFF);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 100s ease infinite;
+        -moz-animation: Gradient 100s ease infinite;
+        animation: Gradient 100s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: brightness(130%) saturate(210%);
+      }
+
+      .pageintro { /* Einleitungstext auf der News-Seite */
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+      }
+
+      .artikelinfo {
+        margin: -0.1rem 0;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: .777777rem;
+        letter-spacing: 1px;
+      }
+
+      .hideme {
+        display: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        line-height: 1.7rem;
+        letter-spacing: .1px;
+        margin: .5rem 0;
+      }
+
+
+/*--------------------------*/
+/*EXAMPLES*/
+/*--------------------------*/
+
+    #a1, #a2, #a3 {
+      margin-top: 3em;
+    }
+
+    .image {
+      margin: 1em 0 0 0;
+      overflow: hidden;
+      border: 1px solid #eee;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+
+/*--------------------------*/
+/*examples*/
+/*--------------------------*/
+
+
+
+/*--------------------------*/
+/*KONTAKT*/
+/*--------------------------*/
+
+      label {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 10rem;
+        height: 1rem;
+        margin: 0 0 1.5rem;
+        padding-right: 1rem;
+        font-family: "Fira Sans", sans-serif;
+        text-align: right;
+      }
+
+      label:first-child {
+        vertical-align: top;
+      }
+
+      .radiolabel {
+        width: auto;
+        padding-left: 0.2rem;
+      }
+
+      input {
+        width: 17rem;
+        /*background: #EDEDED;*/
+        padding-left: 0.2rem;
+        border: 1px inset #EBEBEB; /* inset ohne vollständige Umrandung. Farbe des Hintergrunds benutzen */
+      }
+
+      input[type="checkbox"], input[type="radio"] {
+        width: auto;
+      }
+
+      input[type="submit"], input[type="reset"] {
+        box-sizing: border-box;
+        width: 8rem;
+        height: 1.7rem;
+        margin-right: 1rem;
+        border: none;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        font-family: "Fira Sans", sans-serif;
+        font-size: .77777rem;
+        text-align: left;
+        background-color: transparent;
+        color: #eee;
+      }
+
+
+/*HOVER SUBMIT AND RESET*/
+      input[type="submit"]:hover, input[type="reset"]:hover {
+        background: -webkit-linear-gradient(left, #eee 0%, #eee 48%, #FF0000 48%, #FF0000 50%,#FF0000 52%, #eee 52%, #eee 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        -webkit-animation: hoverGradient 1s linear 2;
+        -o-animation: hoverGradient 1s linear 2;
+        -moz-animation: hoverGradient 1s linear 2;
+        animation: hoverGradient 1s linear 2;
+      }
+
+      @keyframes hoverGradient {
+        0% { background-position: 100% 0% }
+        50% {	background-position: 20% 0% }
+        100% { background-position: 100% 0% }
+      }
+/*hover submit and reset*/
+
+
+      input[type="submit"] {
+        margin-left: 10.25rem;
+      }
+
+      textarea {
+        width: 17rem;
+        height: 6.8rem;
+        padding-left: .2rem;
+        background: #EEE;
+        border: 1px inset #EBEBEB; /* inset ohne vollständige Umrandung. Farbe des Hintergrunds benutzen */
+      }
+
+/*--------------------------*/
+/*kontakt*/
+/*--------------------------*/
+
+
+
+
+/*STYLING THE SCROLLBAR*/
+      body::-webkit-scrollbar {
+        width: 1em;
+      }
+
+      body::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: #666;
+        outline: 1px solid slategrey;
+      }
+/*styling the scrollbar*/

@@ -1,0 +1,106 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    background: rgb(45,55,59);
+    font-family: Lato, helvetica, sans-serif;
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-family: 'Patua One', helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    max-width: 250px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+    .card {
+      flex: 0 0 250px;
+      max-width: 250px;
+      margin: 1vw;
+      background: rgb(200, 200, 200);
+      border-radius: 2%;
+      box-shadow: 8px 5px 8px 5px rgba(0, 0, 0, 0.2), 3px 2px 6px 3px rgba(0, 0, 0, 0.2);
+      transition: all .2s ease-in-out;
+    }
+
+      .list {
+        padding: 0 10%;
+        filter: blur(1.5px);
+        margin: 1.5em 0;
+      }
+
+      .card > a > header {
+        height: 200px;
+        background: rgb(45,55,59);
+        margin: 10px 0;
+        overflow: hidden;
+      }
+
+      .card > a > header > img {
+        filter: grayscale(1) opacity(10%);
+        transition: all .2s ease-in-out;
+      }
+
+      .list > ul {
+        list-style-type: none;
+        margin: 1em auto;
+      }
+
+        .list > ul > li {
+          height: 1.7em;
+        }
+
+      button {
+        width: 40%;
+        height: 1.75em;
+        margin: 2% 0 0 0;
+        background: rgb(170, 170, 170);
+        border: 0;
+      }
+
+      .card:hover {
+        transform: scale(1.1);
+      }
+
+        .card:hover > .list {
+          filter: blur(0);
+        }
+
+        .card:hover > a > header > img {
+          filter: grayscale(0) opacity(100%);
+        }
+
+        .card:hover li {
+          filter: blur(0px);
+        }
+
+      button:hover {
+        background: coloranimation 
+      }

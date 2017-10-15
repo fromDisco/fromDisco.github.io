@@ -1,0 +1,198 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper {
+    flex: 0 0 925px;
+
+  }
+
+  body {
+    background: rgb(102,200,200);
+    font-family: 'Titillium Web', helvetica, sans-serif;
+    font-size: 1em;
+    color: rgb(201,181,75);
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 19fr;
+    grid-template-rows: 8fr 1fr;
+    grid-template-areas:
+      "aside main"
+      "aside footer";
+    width: 55vw;
+    min-width: 950px;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+    /*margin: 10vh auto;*/
+    background: rgb(85,85,85);
+    color: rgb(102,200,200);
+  }
+
+    aside {
+      grid-area: aside;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.2rem;
+      box-shadow: 4px 0px 22px 0px rgba(0,0,0,0.5);
+    }
+
+    main {
+      grid-area: main;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+
+
+      .album-information, .playlist {
+        box-sizing: border-box;
+        height: 26.5vh;
+      }
+
+
+/*ALBUM-INFORMATION*/
+      .album-information {
+        display: flex;
+        padding: 5vh 5vw 4vh 3vw;
+        min-height: 150px;
+      }
+
+  /*IMAGE*/
+        .coverflex {
+          flex: 0 0 21%; /* 23.4% of what? Fuck! */
+          /*background: black;*/
+        }
+
+          .coverflex img {
+            max-width: 100%;
+          }
+  /*image*/
+
+      .playlist-information {
+        /*flex: 0 0 auto;*/
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5vw;
+      }
+
+        .song-information {
+          margin-bottom: auto;
+        }
+
+          .song-information p:first-child {
+            margin-bottom: .3vh;
+            font-weight: 700;
+          }
+
+          .song-information p:not(:first-child) {
+            font-size: .8em;
+            letter-spacing: 0.07em;
+          }
+
+      .music-control .fa {
+        padding-right: 1vw;
+        color: rgb(201,181,75);
+      }
+
+
+        .music-control .fa e {
+          vertical-align: bottom;
+          font-family: 'Titillium Web', helvetica, sans-serif;
+        }
+/*album-information*/
+
+
+        .playlist {
+          display: flex;
+          flex-direction: column;
+          min-height: 200px;
+          list-style-type: none;
+        }
+
+          .playlist li {
+            flex: 0 0 auto;
+            display: flex;
+            height: 5.5vh;
+            align-items: center;
+            padding: 0 1vw 0 3vw;
+          }
+
+            .playlist li p {
+              flex: 0 0 20%;
+            }
+
+            .ambient-cloud {
+              border: 1px solid rgb(201,181,75);
+              padding: 0.2em 0.5em;
+              font-size: 0.7em;
+              letter-spacing: 0.15em;
+              text-transform: uppercase;
+            }
+
+            .playlist li:nth-child(even) {
+              background: rgb(95,95,95);
+            }
+
+        footer {
+          display: flex;
+          align-items: center;
+          height: 7vh;
+          min-height: 50px;
+          padding: .3vh 5.5vw .3vh 3vw;
+          color: rgb(85,85,85);
+          background: rgb(201,181,75);
+        }
+
+          .music-player-bottom {
+            flex: 1 0 auto;
+            display: flex;
+            margin-right: auto;
+          }
+
+            .img-container {
+              width: 5.5vh;
+              height: 5.5vh;
+              background: rgb(85,85,85);
+            }
+
+            .song-information-bottom {
+              margin-left: 1vw;
+            }
+
+              .song-information-bottom e {
+                font-weight: 700;
+              }
+
+              .song-information-bottom p:last-child {
+                font-size: 0.8em;
+                letter-spacing: 0.07em;
+              }
+
+          .music-control-bottom {
+            flex: 0 0 auto;
+            font-size: 1.3em;
+          }
+
+
+            .music-control-bottom .fa {
+              padding: 0 1vw;
+            }
