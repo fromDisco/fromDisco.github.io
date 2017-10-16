@@ -9,9 +9,9 @@
     }
     /* Default link styling */
     /*a:link { color: #222; }*/
-    a:link { color: white; }
+    a:link { color: #333; }
     a:hover, a:focus { color: #333; }
-    a:visited { color: white; }
+    a:visited { color: #333; }
     a:active { color: #500; }
 
 
@@ -28,9 +28,9 @@
       -webkit-animation: Gradient 100s ease infinite;
       -moz-animation: Gradient 100s ease infinite;
       animation: Gradient 100s ease infinite;
-      color: #eee;
+      color: #333;
       font-family: "Fira Sans", sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       overflow-y: scroll;
       font-size: 18px;
     }
@@ -60,12 +60,14 @@
       }
 
       body {
+        position: relative;
         box-sizing: border-box;
-        width: 97%;
+        width: 90%;
         min-width: 720px;
         min-height: 100vh;
         margin: 0 auto;
-        background: #333;
+        overflow: hidden;
+        background: rgba(238,238,238, 0.95);
       }
 
       .flexbox {
@@ -108,7 +110,7 @@
         justify-content: flex-end;
         width: 60%;
         margin-top: -0.6rem;
-        border-top: 1px solid white;
+        border-top: 1px solid #333;
       }
 
       .navlist {
@@ -239,7 +241,7 @@
     .image {
       margin: 1em 0 0 0;
       overflow: hidden;
-      border: 1px solid #eee;
+      border: 1px solid #333;
     }
 
     img {
@@ -280,7 +282,7 @@
 
       input {
         width: 17rem;
-        /*background: #EDEDED;*/
+        background: transparent;
         padding-left: 0.2rem;
         border: 1px inset #EBEBEB; /* inset ohne vollständige Umrandung. Farbe des Hintergrunds benutzen */
       }
@@ -295,19 +297,19 @@
         height: 1.7rem;
         margin-right: 1rem;
         border: none;
-        border-top: 1px solid #eee;
-        border-bottom: 1px solid #eee;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
         font-family: "Fira Sans", sans-serif;
         font-size: .77777rem;
         text-align: left;
         background-color: transparent;
-        color: #eee;
+        color: #333;
       }
 
 
 /*HOVER SUBMIT AND RESET*/
       input[type="submit"]:hover, input[type="reset"]:hover {
-        background: -webkit-linear-gradient(left, #eee 0%, #eee 48%, #FF0000 48%, #FF0000 50%,#FF0000 52%, #eee 52%, #eee 100%);
+        background: -webkit-linear-gradient(left, #333 0%, #333 48%, #FF0000 48%, #FF0000 50%,#FF0000 52%, #333 52%, #333 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 200% 100%;
@@ -333,7 +335,7 @@
         width: 17rem;
         height: 6.8rem;
         padding-left: .2rem;
-        background: #EEE;
+        background: transparent;
         border: 1px inset #EBEBEB; /* inset ohne vollständige Umrandung. Farbe des Hintergrunds benutzen */
       }
 
