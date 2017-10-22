@@ -55,6 +55,10 @@
     background-blend-mode: multiply;*/
   }
 
+     .background > img {
+       width: 100%;
+     }
+
 
   .grid {
     position: relative;
