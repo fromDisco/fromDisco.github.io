@@ -169,6 +169,15 @@
         margin-top: -0.15rem;
       }
 
+      main .links p {
+        font-weight: 700;
+      }
+
+      main .links a {
+        color: rgb(0, 156, 204);
+        line-height: 2rem;
+      }
+
 
       h1, h2, h3 {
         margin: 2rem 0 0;
