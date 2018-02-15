@@ -4,12 +4,10 @@
    you to simply add your own. This is a basic template
    after all.
    ---------------------------------------------------------*/
-    body {
 
-    }
     /* Default link styling */
     /*a:link { color: #222; }*/
-    a:link { color: #333; }
+    /* a:link { color: #333; } */
     a:hover, a:focus { color: #333; }
     a:visited { color: #333; }
     a:active { color: #500; }
@@ -178,6 +176,7 @@
         line-height: 2rem;
       }
 
+      main a:hover, main a:focus { color: #333; }
 
       h1, h2, h3 {
         margin: 2rem 0 0;
