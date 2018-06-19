@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto; 
+    line-height: 1.6em;
+    hyphens: auto;
+}
+
+.background {
+    background: linear-gradient(rgb(200, 200, 300), rgb(200, 200, 150));
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: auto;
+    padding: 2em;
+    height: 100%;
+    background: #fff;
+}
+
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+dl {
+    float: left;
+    width: 40%;
+    margin: 0 2em 2em;
+    background: #fffffa;
+}
+
+dt {
+    font-weight: 900;
+}
+
+dd {
+    margin-top: .5em;
+
+}
+
+dl span {
+    color: #aaa;
+    display: block;
+}

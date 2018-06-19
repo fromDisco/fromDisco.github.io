@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Framework Cheatsheet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="wrapper">
+            <dl>
+                <dt>Request.php</dt>
+                <dd>
+                    $this->domain = $_SERVER['HTTP_HOST'];
+                </dd>
+                <dd>
+                    <span>www.domain.de/[path/to/app/post/12/edit?id=12]</span>
+                    $this->fullPath = $_SERVER['REQUEST_URI'];
+                </dd>
+                <dd>
+                    <span>// www.domain.de/[path/to/app]/Request.php/post/12/edit?id=12</span>
+                    $this->basePath = substr($_SERVER['SCRIPT_NAME'], 0, strrpos($_SERVER['SCRIPT_NAME'], '/'));
+                </dd>
+                <dd>
+                    <span>// www.domain.de/path/to/app/[post/12/edit]?id=12</span>
+                    $pathWithUrlParameters = str_replace($this->basePath, '', $_SERVER['REQUEST_URI']);
+                    $this->path = explode('?', $pathWithUrlParameters)[0];
+                </dd>
+                <dd>
+                    $this->method = $_SERVER['REQUEST_METHOD'];
+                </dd>
+    	        <dd>
+                    $params = array_merge($_POST, $_GET);
+                </dd>
+                <dd>
+                    $this->params = new Map($params);
+                </dd>
+                <dd>
+                    $this->cookies = new Map($_COOKIE);
+                </dd>
+                <dd>
+                    $this->session = new Map($_SESSION, true);
+                </dd>
+                <dd>
+                    domain()
+                </dd>
+                <dd>
+                    fullPath()
+                </dd>
+                <dd>
+                    url()
+                </dd>
+                <dd>
+                    basePath()
+                </dd>
+                <dd>
+                    path()
+                </dd>
+                <dd>
+                    is($method)
+                </dd>
+                <dd>
+                    method()
+                </dd>
+                <dd>
+                    params()
+                </dd>
+                <dd>
+                    session()
+                </dd>
+                <dd>
+                    cookies()
+                </dd>
+            </dl>
+    
+            
+            <dl>
+                <dt>Router.php</dt>
+                <dd>handle($request)</dd>
+            </dl>
+        
+            
+            <dl>
+                <dt>Db.php</dt>
+                <dd>getInstance()</dd>
+            </dl>
+            
+    
+            <dl>
+                <dt>Controller.php</dt>
+                <dd>
+                    $this->request = $request
+                </dd>
+    	        <dd>
+                    $this->db = Db::getInstance()
+                </dd>
+    	        <dd>
+                    $this->view = new Twig_Loader_Filesystem
+                </dd>
+                <dd>
+                    setUser($id)
+                </dd>
+                <dd>
+                    render($template)
+                </dd>
+            </dl>
+            
+    
+            <dl>
+                <dt>LoginController.php</dt>
+                <dd>
+                    $this->model = new UserModel($this->db)
+                </dd>
+                <dd>
+                    create()
+                </dd>
+                <dd>
+                    store()
+                </dd>
+                <dd>
+                    destroy()
+                </dd>
+            </dl>
+            
+    
+            <dl>
+                <dt>RegistrationController.php</dt>
+                <dd>
+                    $this->model = new UserModel($this->db)
+                </dd>
+                <dd>
+                    create()
+                </dd>
+                <dd>
+                    store()
+                </dd>
+            </dl>
+            
+    
+            <dl>
+                <dt>Model.php</dt>
+                <dd>$this->db = $db;</dd>
+            </dl>
+    
+    
+            <dl>
+                <dt>UserModel.php</dt>
+                <dd>
+                    getUserByEmail($email)
+                </dd>
+                <dd>
+                    createUser($email, $password, $screenname, $gender, $age)
+                </dd>
+            </dl>
+    
+    
+            <dl>
+                <dt>Map.php</dt>
+                <dd>
+                    $this->map =& $baseMap;
+                </dd>
+    	        <dd>
+                    $this->writable = $writable;
+                </dd>
+                <dd>
+                    has($key)
+                </dd>
+                <dd>
+                    get($key)
+                </dd>
+                <dd>
+                    getInt($key)
+                </dd>
+                <dd>
+                    getFloat($key)
+                </dd>
+                <dd>
+                    getBool($key)
+                </dd>
+                <dd>
+                    getString($key, bool filter)
+                </dd>
+                <dd>
+                    set($key, $value)
+                </dd>
+                <dd>
+                    delete($key)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>
