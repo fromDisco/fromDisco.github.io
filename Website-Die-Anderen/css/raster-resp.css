@@ -1,0 +1,318 @@
+/* *************************** */
+/* *************************** */
+/* dem body die Klasse .test geben. Den entsprechenden Elementen die Klassen der Farben. So kann man .test abschalten und keine Klasse greift mehr  */
+    .test .gelb { background: yellow;}
+    .test .gruen { background: green;}
+    .test .blau { background: blue;}
+    .test .rot { background: red;}
+
+
+/* ********************************* */
+/* Margin, Padding ***************** */
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .marg { margin: .5%; }
+
+    .pad { padding: 1.5%; }
+
+/* alle Klassen, die mit "per" beginnen */
+    /* [class^="per"] { min-width: 310px; } */
+
+/* alle Klassen, die eine Klasse "marg" enthalten  */
+    /* [class~=marg] { min-width: 305px; } */
+
+/* alle Klassen, die eine Klasse "pad" enthalten  */
+    /* [class~=pad] { min-width: 290px; } */
+
+/* *************************** */
+/* Verschiedenes** *********** */
+
+    .block { display: block; }
+
+    .auto { margin: auto; }
+
+    .wegmachen {
+        position: absolute;
+        left: -9999em;
+    }
+
+    .float-left { float: left; }
+
+    .float-right { float: right; }
+
+    .clear-left { clear: left; }
+
+    .clear-right { clear: right; }
+
+    .clear-both { clear: both; }
+
+    .clear:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .faux { overflow: hidden; }
+
+    .faux .faux-columns {
+        padding-bottom: 200em;
+        margin-bottom: -198em;
+    }
+
+    .img-scale {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav a {
+        text-decoration: none;
+        display: block;
+    }
+
+    .nav { list-style: none; }
+
+/* ***************************  */
+/* Selber formatieren ********  */
+    a:hover, a:focus {
+        /* color:   */
+    }
+
+    a:visited {
+        /* color:  */
+    }
+
+/* ***************************** */
+/* Grid  *********************** */
+/* without Margin ************** */
+
+    .per-n-100 { width: 100%; }
+
+    .per-n-90, .per-w-90 { width: 90%; }
+
+    .per-n-80, .per-w-80 { width: 80%; }
+
+    .per-n-70, .per-w-70 { width: 70%; }
+
+    .per-n-60, .per-w-60 { width: 60%; }
+
+    .per-n-50, .per-w-50 { width: 50%; }
+
+    .per-n-40, .per-w-40 { width: 40%; }
+
+    .per-n-33, .per-w-33 { width: 33.33333333%; }
+    
+    .per-n-30, .per-w-30 { width: 30%; }
+
+    .per-n-25, .per-w-25 { width: 25%; }
+
+    .per-n-20, .per-w-20 { width: 20%; }
+
+    .per-n-16, .per-w-16 { width: 16.66666666%; }
+
+    .per-n-12_5, .per-w-12_5 { width: 12.5%; }
+
+    .per-n-10, .per-w-10 { width: 10%; }
+
+
+/* ********************************* */
+/* flexible Klassen: Margin ******** */
+
+    .per-n-100.marg., .per-w-100.marg { width: 99%; }
+
+    .per-n-80.marg, .per-w-80.marg { width: 79%; }
+
+    .per-n-70.marg, .per-w-70.marg { width: 69%; }
+
+    .per-n-60.marg, .per-w-60.marg { width: 59%; }
+
+    .per-n-50.marg, .per-w-50.marg { width: 49%; }
+
+    .per-n-40.marg, .per-w-40.marg { width: 39%; }
+
+    .per-n-33.marg, .per-w-33.marg { width: 32.33333333%; }
+    
+    .per-n-30.marg, .per-w-30.marg { width: 29%; }
+
+    .per-n-25.marg, .per-w-25.marg { width: 24%; }
+
+    .per-n-20.marg, .per-w-20.marg { width: 19%; }
+
+    .per-n-16.marg, .per-w-16.marg { width: 15.66666666%; }
+
+    .per-n-12_5.marg, .per-w-12_5.marg { width: 11.5%; }
+
+    .per-n-10.marg, .per-w-10.marg { width: 9%; }
+
+
+/* ********************************* */
+/* flexible Klassen: Margin, Padding ******** */
+
+    .per-n-100.marg.pad, .per-w-100.marg.pad { width: 96%; }
+
+    .per-n-80.marg.pad, .per-w-80.marg.pad { width: 76%; }
+
+    .per-n-70.marg.pad, .per-w-70.marg.pad { width: 66%; }
+
+    .per-n-60.marg.pad, .per-w-60.marg.pad { width: 56%; }
+
+    .per-n-50.marg.pad, .per-w-50.marg.pad { width: 46%; }
+
+    .per-n-40.marg.pad, .per-w-40.marg.pad { width: 36%; }
+
+    .per-n-33.marg.pad, .per-w-33.marg.pad { width: 29.33333333%; }
+    
+    .per-n-30.marg.pad, .per-w-30.marg.pad { width: 26%; }
+
+    .per-n-25.marg.pad, .per-w-25.marg.pad { width: 21%; }
+
+    .per-n-20.marg.pad, .per-w-20.marg.pad { width: 16%; }
+
+    .per-n-16.marg.pad, .per-w-16.marg.pad { width: 12.66666666%; }
+
+    .per-n-12_5.marg.pad, .per-w-12_5.marg.pad { width: 8.5%; }
+
+    .per-n-10.marg.pad, .per-w-10.marg.pad { width: 6%; }
+
+/* ********************************* */
+/* flexible Klassen: Padding ******** */
+
+    .per-n-100.pad, .per-w-100.pad { width: 97%; }
+
+    .per-n-80.pad, .per-w-80.pad { width: 77%; }
+
+    .per-n-70.pad, .per-w-70.pad { width: 67%; }
+
+    .per-n-60.pad, .per-w-60.pad { width: 57%; }
+
+    .per-n-50.pad, .per-w-50.pad { width: 47%; }
+
+    .per-n-40.pad, .per-w-40.pad { width: 37%; }
+
+    .per-n-33.pad, .per-w-33.pad { width: 30.33333333%; }
+
+    .per-n-30.pad, .per-w-30.pad { width: 27%; }
+
+    .per-n-25.pad, .per-w-25.pad { width: 22%; }
+
+    .per-n-20.pad, .per-w-20.pad { width: 17%; }
+
+    .per-n-16.pad, .per-w-16.pad { width: 13.66666666%; }
+
+    .per-n-12_5.pad, .per-w-12_5.pad { width: 9.5%; }
+
+    .per-n-10.pad, .per-w-10
+     .pad { width: 7%; }
+
+/* ************************************ */
+/* 1900 px ***************************** */
+@media screen and (max-width: 1900px) {
+    .per-n-10 { width: 20%; }
+    .per-n-10.marg { width: 19%; }
+    .per-n-10.marg.pad { width: 16%; }
+    .per-n-10.pad { width: 17%; }
+
+    .per-n-12_5 { width: 25%; }
+    .per-n-12_5.marg { width: 24%; }
+    .per-n-12_5.pad { width: 22%; }
+    .per-n-12_5.marg.pad { width: 21%; }
+}
+
+/* ************************************ */
+/* 1300 px ***************************** */
+@media screen and (max-width: 1300px) {
+    .per-n-10, .per-n-20, .per-n-12_5 { width: 50%; }
+    .per-n-10.marg, .per-n-20.marg, .per-n-12_5.marg { width: 49%; }
+    .per-n-10.marg.pad, .per-n-20.marg.pad, .per-n-12_5.marg.pad { width: 46%; }
+    .per-n-10.pad, .per-n-20.pad, .per-n-12_5.pad { width: 47%; }
+}
+
+/* ************************************ */
+/* 1000 px ***************************** */
+@media screen and (max-width: 1000px) {
+    .per-n-10, .per-n-25, .per-n-33 { width: 50%; }
+    .per-n-10.marg, .per-n-25.marg, .per-n-33.marg { width: 49%; }
+    .per-n-10.marg.pad, .per-n-25.marg.pad, .per-n-33.marg.pad { width: 46%; }
+    .per-n-10.pad, .per-n-25.pad, .per-n-33.pad { width: 47%; }
+
+    .per-n-50  { width: 100%; }
+    .per-n-50.pad  { width: 97%; }
+    .per-n-50.marg  { width: 99%; }
+    .per-n-50.marg.pad { width: 96%; }
+}
+
+/* N-********************************** */
+/* 720 px ***************************** */
+@media screen and (max-width: 720px) {
+    .per-n-80, .per-n-70,
+    .per-n-60, .per-n-50, .per-n-40,
+    .per-n-33, .per-n-30, .per-n-25,
+    .per-n-20, .per-n-16, .per-n-12_5,
+    .per-n-10 {
+        width: 100%;
+    }
+
+    .per-n-80.marg, .per-n-70.marg,
+    .per-n-60.marg, .per-n-50.marg, .per-n-40.marg,
+    .per-n-33.marg, .per-n-30.marg, .per-n-25.marg,
+    .per-n-20.marg, .per-n-16.marg, .per-n-12_5.marg,
+    .per-n-10.marg {
+        width: 100%;
+    }
+
+    .per-n-80.pad, .per-n-70.pad,
+    .per-n-60.pad, .per-n-50.pad, .per-n-40.pad,
+    .per-n-33.pad, .per-n-30.pad, .per-n-25.pad,
+    .per-n-20.pad, .per-n-16.pad, .per-n-12_5.pad,
+    .per-n-10.pad {
+        width: 100%;
+    }
+
+    .per-n-100.p.marg, .per-n-80.p.marg, .per-n-70.p.marg,
+    .per-n-60.p.marg, .per-n-50.p.marg, .per-n-40.p.marg,
+    .per-n-33.p.marg, .per-n-30.p.marg, .per-n-25.p.marg,
+    .per-n-20.p.marg, .per-n-16.p.marg, .per-n-12_5.p.marg,
+    .per-n-10.p.marg {
+        width: 100%;
+    }
+
+}
+
+/* W -********************************** */
+/* 480 px ***************************** */
+@media screen and (max-width: 480px) {
+    .per-w-80, .per-w-70,
+    .per-w-60, .per-w-50, .per-w-40,
+    .per-w-33, .per-w-30, .per-w-25,
+    .per-w-20, .per-w-16, .per-w-12_5,
+    .per-w-10 {
+        width: 100%;
+    }
+
+    .per-w-80.marg, .per-w-70.marg,
+    .per-w-60.marg, .per-w-50.marg, .per-w-40.marg,
+    .per-w-33.marg, .per-w-30.marg, .per-w-25.marg,
+    .per-w-20.marg, .per-w-16.marg, .per-w-12_5.marg,
+    .per-w-10.marg {
+        width: 100%;
+    }
+
+    .per-w-80.pad, .per-w-70.pad,
+    .per-w-60.pad, .per-w-50.pad, .per-w-40.pad,
+    .per-w-33.pad, .per-w-30.pad, .per-w-25.pad,
+    .per-w-20.pad, .per-w-16.pad, .per-w-12_5.pad,
+    .per-w-10.pad {
+        width: 100%;
+    }
+
+    .per-w-100.p.marg, .per-w-80.p.marg, .per-w-70.p.marg,
+    .per-w-60.p.marg, .per-w-50.p.marg, .per-w-40.p.marg,
+    .per-w-33.p.marg, .per-w-30.p.marg, .per-w-25.p.marg,
+    .per-w-20.p.marg, .per-w-16.p.marg, .per-w-12_5.p.marg,
+    .per-w-10.p.marg {
+        width: 100%;
+    }
+
+}

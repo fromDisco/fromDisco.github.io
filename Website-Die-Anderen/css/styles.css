@@ -1,0 +1,600 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+        background: url(../img/bg-1920-d.png) no-repeat left top fixed;
+        background-size: cover;
+        font-family: 'Merriweather', serif;
+        font-size: 1em;
+        line-height: 1.625em;
+    }
+
+    .gradient {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        
+        /* ************************************ */
+        /* Hintergrund-Verlauf **************** */
+        background: rgb(220,101,41);
+        background: -moz-linear-gradient(-45deg,  rgba(220,101,41,0.75) 1%, rgba(220,101,41,0.75) 50%, rgba(131, 151, 179,0.75) 50%, rgba(131, 151, 179,0.75) 100%);
+        background: -webkit-linear-gradient(-45deg,  rgba(220,101,41,0.75) 1%,rgba(220,101,41,0.75) 50%,rgba(131, 151, 179,0.75) 50%,rgba(131, 151, 179,0.75) 100%);
+        background: linear-gradient(to right bottom,  rgba(220,101,41,0.75) 1%,rgba(220,101,41,0.75) 50%,rgba(131, 151, 179,0.75) 50%,rgba(131, 151, 179,0.75) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc6529', endColorstr='#8fa4c1',GradientType=1 );
+    }
+
+    h1, h2, h3, h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: .125em;
+    }
+
+    sup {
+        line-height: 1em;
+    }
+
+    .wrapper {
+        background: #fff;
+        max-width: 980px;
+        margin: 1em auto;
+        border-bottom: 1px solid #fff;
+        padding-top: .5em;
+    }
+
+/* HEADER ************************* */
+    header {
+        padding-bottom: 1px;
+    }
+    
+    .logo {
+        margin: 15px;
+    }
+    
+    .slogan-h1, .slogan-h3 {
+        font-size: 0.875em;
+        display: inline-block;
+        margin: 3.65em 15px 0;
+    }
+
+        .indexh1 span, .slogan-h3 span {
+            position: absolute;
+            left: -9999em;
+        }
+
+/* NAVIGATION ********************* */
+    .hauptNav {
+        margin: 0 15px 2em;
+    }
+
+    .navlist {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: .825em;
+        text-transform: uppercase;
+        letter-spacing: .15em;
+        color: rgb(93, 120, 160);
+    }
+
+        .navlist li {
+            position: relative;
+            float: left;
+            border-bottom: 4px solid transparent;
+            background: #fff;
+        }
+        
+        li.active>a {
+            color: rgb(220, 101, 41);
+            border-bottom: 4px solid rgb(220, 101, 41);
+        }
+
+        .navlist>li:hover>a, .navlist>li:focus>a {
+            border-bottom: 4px solid rgb(93, 120, 160);
+        }
+        
+        li.active:hover>a, li.active:focus>a {
+            border-bottom: 4px solid rgb(220, 101, 41);
+        }
+        
+        li.active>a:hover {
+            cursor: default;
+        }
+
+        .navlist > li > a {
+            display: block;
+            text-decoration: none;
+            padding: 0.5em 1.25em;
+            margin: 2px;
+            color: inherit;
+        }
+/* Ausklappnavigation ****************** */
+            .navInnen {
+                position: absolute;
+                left: -9999em;
+                list-style: none;
+                padding: 0;
+                min-width: 230px;
+                background: #fff;
+            }
+
+                ul>li:hover .navInnen,
+                ul>li:focus .navInnen {
+                    left: 0;
+                }
+
+            ul ul li {
+                /* float:none; */
+                width: 100%;;
+            }
+            
+            .navInnen a {
+                display: block;
+                text-decoration: none;
+                padding: 0.5em 1.25em;
+                border-bottom: 2px solid #fff;
+                color: inherit;
+            }
+
+            .navInnen a:hover:after {
+                content: " > "
+            }
+            
+            .kapitelNav ul li a {
+                display: inline-block;
+            }
+
+            .kapitelNav ul li a:after {
+                content: " > ";
+                color: transparent;
+            }
+
+            .kapitelNav ul li a:hover:after {
+                color: rgb(93, 120, 160);
+            }
+            
+            .kapitelNav ul li:hover>span {
+                left: auto;
+            }
+
+/* ausklappnaviation +++++++++++++++++++++++ */
+
+/* navigation +++++++++++++++++++++ */
+/* CONTENTWRAPPER ***************** */
+    .contentwrapper {
+        margin: 0 15px 2em;
+    }
+/* contentwrapper +++++++++++++++++ */
+/* HEADBOX ************************ */
+    .headbox {
+        background: rgb(93, 120, 160);
+        color: #fff;
+        padding: 2em;
+        text-align: center;
+        margin: 2em 0;
+    }
+
+        .texte .headbox {
+            background: rgb(220, 101, 41);
+        }
+
+        .headbox p {
+            font-size: 1.125em;
+            line-height: 1.625em;
+            letter-spacing: .05em;
+        }
+
+        .headbox p a {
+            display: block;
+            margin-top: 1em;
+            padding-top: 1em;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .headbox p a:hover, .headbox p a:focus {
+            text-decoration: underline;
+        }
+            
+/* headbox ++++++++++++++++++++++++ */
+/* TEXTWRAPPER ******************** */
+    .border-top {
+        border-top: 2px solid black;
+    }
+
+    .indexKat {
+        font-size: 0.875em;
+        margin-top: 2em;
+    }
+    
+        .indexKat span {
+            border-bottom: 2px solid black;
+            padding-bottom: .25em;
+            }
+
+    .themenHead {
+        font-size: 1.75rem;
+        margin-bottom: .5em;
+    }
+
+/* themendarstellung auf themen-seite      */
+    .procontraBanner { margin-bottom: 1em; }
+
+    .procontraBanner img { max-height: 250px; }
+
+        .pro dt a { color: rgb(220, 101, 41); }
+        
+        .contra dt a { color: rgb(93, 120, 160); }
+
+        dt a { text-decoration: none; }
+
+            dt a:hover, dt a:focus { text-decoration: underline; }
+
+        .dt {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3333333em;
+            margin: 0 0 .4em 0;
+        }
+
+        .procontraBanner dd {
+            font-size: .875em;
+            margin: 0.2em 0;
+        }
+
+
+/* THEMENSEITEN ****************** */
+/* PROCONTRA-NAVIGATION ********** */
+
+    .procontraNav {
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+    }
+        .procontraNav ul { padding: 0; }
+
+        .procontraNav li { list-style: none; }
+
+            .proBalken, .contraBalken {
+                padding: .2em 1em .15em 1em;
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                text-transform: uppercase;
+                letter-spacing: .2em;
+                font-weight: 900;
+            }
+
+            .contraBalken {
+                background: rgb(93, 120, 160);
+                border-top: 2px solid rgb(93, 120, 160);
+                text-align: right;
+            }
+
+            .proBalken {
+                border-top: 2px solid rgb(220, 101, 41);
+                background: rgb(220, 101, 41);
+            }
+
+            li:hover>.proBalken:after, li:hover>.contraBalken:before,
+            li:focus>.proBalken:after, li:focus>.contraBalken:before  {
+                content: " > ";
+            } 
+
+            .procontraActive:hover:after, .procontraActive:hover:before {
+                content: "";
+            }
+            
+            .procontraActive { 
+                background: #fff; 
+                cursor: default;
+            }
+
+                .proBalken.procontraActive { color: rgb(220, 101, 41); }
+
+                .contraBalken.procontraActive { color: rgb(93, 120, 160); }
+/* procontra-Navigaton +++++++++++ */
+/* TEXT ************************** */
+
+            .artikel {
+                margin-top: 2.5em;
+                margin-bottom: 2.5em;
+            }
+
+                .artikel-h1 {
+                    font-size: 1.75em;
+                    line-height: 1.25em;
+                }
+
+                /* text über und unter der h1 auf den themen-seiten  */
+                .autoren, .pagina {
+                    display: block;
+                    margin-bottom: .2em;
+                    font-family: 'Merriweather', serif;
+                    font-size: 0.6666666rem; 
+                    line-height: 1.5em;
+                    letter-spacing: .15em;
+                    color: #000;
+                }
+
+                .pagina {
+                    margin-top: .5em;
+                }
+
+                .proText .artikel-h1, .impressumText .artikel-h1 {
+                    color: rgb(220, 101, 41);
+                }
+
+                .contraText .artikel-h1, .konzeptText .artikel-h1  {
+                    color: rgb(93, 120, 160);
+                }
+
+                .subhead {
+                    font-family: 'Merriweather', serif;
+                    font-weight: 600;
+                    font-size: 1em;
+                    text-transform: unset;
+                    letter-spacing: 0;
+                    margin-top: .5em;
+                }
+
+            .titelImg {
+                display: block;
+                margin-top: 1.5em;
+                margin-bottom: 2em;
+            }
+            /* texte ist eine klasse von body, denn auf den Seiten mit viel Text ist die Schriftgröße erhöht */
+            .texte p {
+                font-size: 1.125em;
+                line-height: 1.75em;
+                margin-top: 1em;
+            }
+
+            .black {
+                color: #000;
+            }  
+
+                .black:hover, .black:focus {
+                    color: rgb(220, 101, 41);
+                }  
+
+            .h3text {
+                margin-top: 1em;
+                font-size: 1.1em;
+            }
+            
+            .proText .h3text {
+                color: rgb(220, 101, 41);
+            }
+
+            .contraText .h3text, .konzeptText .h3text {
+                color: rgb(93, 120, 160);
+            }
+/* PAGINIERUNG TEXT ************** */
+            .pageNav {
+                margin-top: 1em;
+                text-align: center;    
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.125em;
+            }
+
+            .pageNav ul {
+                display: inline-block;
+                list-style: none;
+                padding: 0;
+            }
+
+                .pageNav a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 0 0.75em 0 0.75em;
+                    margin: 0 2px;
+                }
+/* paginierung text ++++++++++++++ */
+/* PAGENNAV ********************** */
+        .proText .pageNav a {
+            color: rgb(220, 101, 41);
+            border-bottom: 2px solid transparent;
+        }
+
+        .contraText .pageNav a, .konzeptText .pageNav a {
+            color: rgb(93, 120, 160);
+            border-bottom: 2px solid transparent;
+        }
+
+            .proText .pageNav a:hover, .proText .pageNav a:focus {
+                border-bottom: 2px solid rgb(220, 101, 41);
+            }
+
+            .contraText .pageNav a:hover, .contraText .pageNav a:focus, 
+            .konzeptText .pageNav a:hover, .konzeptText .pageNav a:focus {
+                border-bottom: 2px solid rgb(93, 120, 160);
+            }
+
+            .pageNav a.active {
+                color: rgb(220, 101, 41);
+                cursor: default;
+                border-bottom: 2px solid rgb(220, 101, 41);
+            }
+
+                .pageNav a.active:hover, .pageNav a.active:focus {
+                    border-bottom: 0;
+                }
+/* pagenav ++++++++++++++++++++++ */
+/* themenseiten +++++++++++++++++ */
+/* KONZEPTSEITEN **************** */
+/* listen im text              */
+            .textDlWrapper {
+                margin-top: 1em;
+            }
+
+            .dlh4 {
+                color: rgb(220, 101, 41);
+                margin-bottom: -.5em;
+                margin-top: 1.5em;
+            }
+
+            .liste dt {
+                font-family: 'Roboto', sans-serif;
+                color: rgb(220, 101, 41);
+                letter-spacing: .05em;
+                font-size: 1.125em;
+                line-height: 1.75em;
+                margin-top: .3em;
+            }
+
+            .liste dd {
+                font-size: 1.125em;
+                line-height: 1.75em;
+                margin-left: 1.3em;
+                margin-top: -0.2em;
+            }
+
+        /* quellenverzeichnis */
+            .quellenverzeichnis {
+                margin-top: 3em;
+                border-top: 2px solid rgb(93, 120, 160);
+            }
+
+            .quellenverzeichnis dt {
+                font-family: 'Roboto', sans-serif;
+                color: rgb(220, 101, 41);
+                letter-spacing: .05em;
+                font-size: 1.125em;
+                line-height: 1.75em;
+                margin-top: .3em;
+            }
+/* kapitelnavigation im textbereich */
+
+            .kapitelNav {
+                position: relative;
+                margin-top: 3em;
+                border-top: 2px solid rgb(93, 120, 160);
+            }
+
+            .kapitelNav h4 {
+                display: inline-block;
+                position: absolute;
+                top: -1.5em;
+                margin: .5em 0;
+                padding: .2em .5em .2em 0;
+                background: #fff;
+                color: rgb(93, 120, 160);
+            }
+
+            .kapitelNav ul {
+                list-style: none;
+                padding: 0;
+                margin: 1.5em 0;
+                font-family: 'Roboto', sans-serif;
+                font-size: .825em;
+                text-transform: uppercase;
+                letter-spacing: .15em;
+                color: rgb(93, 120, 160);
+            }
+
+            .kapitelNav a {
+                display: block;
+                text-decoration: none;
+                padding: 0.25em 2em 0.25em 0;
+                color: inherit;
+            }
+
+                .kapitelNav a:hover:after, .kapitelNav a:focus:after {
+                    content: " > ";
+                }
+
+            .kapitelNav .active {
+                color: rgb(220, 101, 41);
+            }
+/* konzeptseiten ++++++++++++++++ */
+/* text ++++++++++++++++++++++++++ */
+/* KONTAKTFORMULAR *************** */
+        .formular {
+            margin-top: 2em;
+            margin-bottom: 6em;
+        }
+
+        .formular div {
+            margin-top: .7em;
+        }
+
+        label {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            color: rgb(93, 120, 160);
+            min-width: 9.3em;
+            text-align: right;
+            padding-right: 1em;
+        }
+        
+        input, textarea {
+            border: 2px solid rgb(93, 120, 160);
+        }
+
+        input:hover, input:focus, input:active,
+        select:hover, select:focus, select:active,
+        textarea:hover, textarea:focus, textarea:active {
+            border: 2px solid rgb(220, 101, 41);
+            outline: 0;    
+        }
+
+        select {
+            border: 2px solid rgb(93, 120, 160);
+        }
+
+        input, textarea {
+            width: 30em;
+        }
+
+        input {
+            height: 2em;
+        }
+
+        input[type="submit"] {
+            display: block;
+            position: relative;
+            left: 10.5rem;
+            box-sizing: content-box;
+            background: rgb(220, 101, 41);
+            border: 0;
+            /* padding: 0.7em; */
+            margin-top: 1.5em;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.825em;
+            letter-spacing: 0.1em;
+            color: white;
+        }
+
+        input[type="submit"]:hover, input[type="submit"]:focus {
+            background: rgb(93, 120, 160);
+        }
+
+
+        .labelInputWrap:last-of-type > *{
+            vertical-align: top;
+        }
+
+
+/* kontaktformular +++++++++++++++ */
+
+/* textwrapper ++++++++++++++++++++ */
+
+/* POSITION: FIXED zurück zum portfolio */
+
+.zurueck {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.zurueck a {
+    font-size: 0.875em;
+    text-decoration: none;
+    color: #fff;
+}
+
