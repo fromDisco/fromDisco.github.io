@@ -22,13 +22,26 @@
                     <h3 class="slogan-h3 float-right"><span>Die Anderen ... Seiten betrachten</span>Magazin für Diskurs und Meinungsbildung</h3>
                 </header>
 <!-- NAVIGATION  -->
+                <div id="hamburger">
+                    <a href="#hamburger" title="open" class="open">☰</a>
+                    <a href="#" title="close" class="close">✖</a>
+                </div>
+
                 <nav class="nav hauptNav">
                     <ul class="navlist clear">
-                        <li tabindex="0"><a href="../index.html" title="Home">Start</a></li>
-                        <li tabindex="0"><a href="../themen/themen.html" title="Themen">Themen</a></li>
-                        <li tabindex="0" class="active"><a href="warum.html" title="Gründe für diese Website">Warum</a></li>
-                        <li tabindex="0"><a href="../kontakt/kontakt.html" title="Kontakt">Kontakt</a></li>
-                        <li tabindex="0"><a href="../impressum/impressum.html" title="Impressum">Impressum</a></li>
+                        <li><a href="../index.html" title="Home">Start</a></li>
+                        <li><a href="../themen/themen.html" title="Themen">Themen</a></li>
+                        <li class="active" id="warum">
+                            <a href="warum.html" title="Gründe für diese Website">Warum</a>
+                            <ul class="navInnen">
+                                <li><a href="warum.html" title="Einleitung">Einleitung</a></li>
+                                <li><a href="moralentwicklung.html" title="Moralentwicklung">Moralentwicklung</a></li>
+                                <li><a href="moraltheorie.html" title="Moraltheorie">Moraltheorie</a></li>
+                                <li><a href="fazit.html" title="Fazit">Fazit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kontakt/kontakt.html" title="Kontakt">Kontakt</a></li>
+                        <li><a href="../impressum/impressum.html" title="Impressum">Impressum</a></li>
                     </ul>
                 </nav><!-- navigation -->
 <!-- CONTENTWRAPPER **************** -->
@@ -114,35 +127,36 @@
                                 </ul>
                             </div><!-- pagenav -->
 <!-- KAPITELNAV ******************** -->
-                            <div class="kapitelNav per-w-70 auto">
-                                <h4>Die weiteren Kapitel</h4>
-                                <ul>
-                                    <li tabindex="0"><a href="warum.html" title="Warum gibts diese Website?">Warum</a></li>
-                                    <li tabindex="0">
-                                        <a href="moralentwicklung.html" title="Moralentwicklung" class="active">Moralentwicklung</a>
-                                        <span class="wegmachen">
-                                            <a href="moralentwicklung.html" title="Seite 1">1</a>
-    
-                                            <a href="moralentwicklung-2.html" title="Seite 2">2</a>
-    
-                                            <a href="moralentwicklung-3.html" title="Seite 3">3</a>
-    
-                                            <a href="moralentwicklung-4.html" title="Seite 4" class="active">4</a>
-                                        </span>
-                                    </li>
-                                    <li tabindex="0" class="clear-both">
-                                        <a href="moraltheorie.html" title="Moraltheorie">Moraltheorie</a>
-                                        <span class="wegmachen">
-                                            <a href="moraltheorie.html" title="Seite 1">1</a>
-    
-                                            <a href="moraltheorie-2.html" title="Seite 2">2</a>
-    
-                                            <a href="moraltheorie-3.html" title="Seite 3">3</a>
-                                        </span>
-                                    </li>
-                                    <li tabindex="0" class="clear-both"><a href="fazit.html" title="Fazit">Fazit</a></li>
-                                </ul>
-                            </div><!-- kapitelnav -->
+                            <footer>
+                                <div class="kapitelNav per-w-70 auto">
+                                    <h4>Die weiteren Kapitel</h4>
+                                    <ul>
+                                        <li tabindex="0"><a href="warum.html" title="Warum gibts diese Website?">Warum</a></li>
+                                        <li tabindex="0">
+                                            <a href="moralentwicklung.html" title="Moralentwicklung" class="active">Moralentwicklung</a>
+                                            <span class="wegmachen">
+                                                <a href="moralentwicklung.html" title="Seite 1">1</a>
+        
+                                                <a href="moralentwicklung-2.html" title="Seite 2">2</a>
+        
+                                                <a href="moralentwicklung-3.html" title="Seite 3">3</a>
+        
+                                                <a href="moralentwicklung-4.html" title="Seite 4" class="active">4</a>
+                                            </span>
+                                        </li>
+                                        <li tabindex="0" class="clear-both">
+                                            <a href="moraltheorie.html" title="Moraltheorie">Moraltheorie</a>
+                                            <span class="wegmachen">
+                                                <a href="moraltheorie.html" title="Seite 1">1</a>
+        
+                                                <a href="moraltheorie-2.html" title="Seite 2">2</a>
+        
+                                                <a href="moraltheorie-3.html" title="Seite 3">3</a>
+                                            </span>
+                                        </li>
+                                        <li tabindex="0" class="clear-both"><a href="fazit.html" title="Fazit">Fazit</a></li>
+                                    </ul>
+                                </div><!-- kapitelnav -->
                             </footer>
                         </article><!-- text -->
                     </div><!-- textwrapper -->

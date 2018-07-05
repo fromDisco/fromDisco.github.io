@@ -4,7 +4,7 @@ html, body {
 }
 
     body {
-        background: url(../img/bg-1920-d.png) no-repeat left top fixed;
+        background: url(../img/bg-1920-d.jpg) no-repeat left top fixed;
         background-size: cover;
         font-family: 'Merriweather', serif;
         font-size: 1em;
@@ -42,6 +42,7 @@ html, body {
     .wrapper {
         background: #fff;
         max-width: 980px;
+        min-width: 600px;
         margin: 1em auto;
         border-bottom: 1px solid #fff;
         padding-top: .5em;
@@ -59,8 +60,10 @@ html, body {
     .slogan-h1, .slogan-h3 {
         font-size: 0.875em;
         display: inline-block;
-        margin: 3.65em 15px 0;
+        margin: 3.92em 15px 0;
     }
+
+    .slogan-h1, .slogan-h3 { line-height: 1.4em; }
 
         .indexh1 span, .slogan-h3 span {
             position: absolute;
@@ -71,6 +74,24 @@ html, body {
     .hauptNav {
         margin: 0 15px 2em;
     }
+
+
+    /* *********************** */
+    /* hamburger menue ****** */
+
+        #hamburger {
+            margin: .7em auto .7em auto;
+            display: none;
+            width: 86%;
+        }
+
+        #hamburger a {
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 2em;
+            color: rgb(93, 120, 160);
+        }
 
     .navlist {
         list-style: none;
@@ -86,8 +107,11 @@ html, body {
         .navlist li {
             position: relative;
             float: left;
-            border-bottom: 4px solid transparent;
             background: #fff;
+        }
+        
+        .navlist>li>a {
+            border-bottom: 4px solid transparent;
         }
         
         li.active>a {
@@ -169,6 +193,7 @@ html, body {
 /* CONTENTWRAPPER ***************** */
     .contentwrapper {
         margin: 0 15px 2em;
+        padding-top: 1px;
     }
 /* contentwrapper +++++++++++++++++ */
 /* HEADBOX ************************ */
@@ -188,6 +213,15 @@ html, body {
             font-size: 1.125em;
             line-height: 1.625em;
             letter-spacing: .05em;
+            margin: auto;
+        }
+
+        .headbox .autoren {
+            color: white;
+        }
+
+        .orange {
+            background: rgb(220, 101, 41);
         }
 
         .headbox p a {
@@ -204,8 +238,8 @@ html, body {
             
 /* headbox ++++++++++++++++++++++++ */
 /* TEXTWRAPPER ******************** */
-    .border-top {
-        border-top: 2px solid black;
+    .border-bottom {
+        border-bottom: 2px solid black;
     }
 
     .indexKat {
@@ -221,10 +255,11 @@ html, body {
     .themenHead {
         font-size: 1.75rem;
         margin-bottom: .5em;
+        margin-top: 0;
     }
 
 /* themendarstellung auf themen-seite      */
-    .procontraBanner { margin-bottom: 1em; }
+    .procontraBanner { padding-bottom: 1.5em; }
 
     .procontraBanner img { max-height: 250px; }
 
@@ -245,6 +280,10 @@ html, body {
         .procontraBanner dd {
             font-size: .875em;
             margin: 0.2em 0;
+        }
+
+        .procontraBanner + .procontraBanner {
+            margin-top: 2em;
         }
 
 
@@ -305,6 +344,10 @@ html, body {
                 margin-bottom: 2.5em;
             }
 
+            .artikel p, .artikel h3, .artikel dl, .kapitelNav, .quellenverzeichnis {
+                width: 70%;
+            }
+
                 .artikel-h1 {
                     font-size: 1.75em;
                     line-height: 1.25em;
@@ -331,6 +374,10 @@ html, body {
 
                 .contraText .artikel-h1, .konzeptText .artikel-h1  {
                     color: rgb(93, 120, 160);
+                }
+
+                .konzeptText {
+                    margin-top: 1em;
                 }
 
                 .subhead {
@@ -500,7 +547,7 @@ html, body {
             .kapitelNav a {
                 display: block;
                 text-decoration: none;
-                padding: 0.25em 2em 0.25em 0;
+                padding: 0.25em 1em 0.25em 0;
                 color: inherit;
             }
 
@@ -524,16 +571,15 @@ html, body {
         }
 
         label {
-            display: inline-block;
             font-family: 'Roboto', sans-serif;
             color: rgb(93, 120, 160);
-            min-width: 9.3em;
             text-align: right;
             padding-right: 1em;
         }
         
         input, textarea {
             border: 2px solid rgb(93, 120, 160);
+            display: block;
         }
 
         input:hover, input:focus, input:active,
@@ -557,8 +603,6 @@ html, body {
 
         input[type="submit"] {
             display: block;
-            position: relative;
-            left: 10.5rem;
             box-sizing: content-box;
             background: rgb(220, 101, 41);
             border: 0;
@@ -579,10 +623,156 @@ html, body {
             vertical-align: top;
         }
 
-
 /* kontaktformular +++++++++++++++ */
+/* IMPRESSUM ********************* */
+        .impressumh4 {
+            font-size: 1em;
+            letter-spacing: 0.05em;
+        }
+
+        .impressumh4 span {
+            font-family: 'Merriweather', serif;
+            font-size: 0.5em;
+            font-weight: 400;
+            line-height: 1em;
+        }
+
+        .impressumWrapper p {
+            width: 100%;
+        }
+        
+        .impressumWrapper a {
+            font-size: .825em;
+            color: #000;
+        }
+  
+        .impressumWrapper a:hover {
+            color: rgb(220, 101, 41);
+        }
+
+        .herausgeber span {
+            display: block;
+        }
+
+        .herausgeber a {
+            font-size: 1em;
+        }
+
+        .schreiberling {
+            margin-top: .5em;
+        }
+
+        .schreiberling span {
+            display: block;
+            font-size: .825em;
+            line-height: 1.6em;
+        }
+
+        .schreiberName {
+            font-family: 'Roboto', sans-serif;
+            color: rgb(93, 120, 160);
+        }
+
+
+/* impressum +++++++++++++++++++++ */
 
 /* textwrapper ++++++++++++++++++++ */
+
+/* *********************************************************** */
+/* MEDIA QUERIES ******************************************** */
+    
+        @media screen and (max-width: 1200px) {
+            .slogan-h3, .slogan-h1 {
+                float: none;
+                margin-top: .5em;
+            }
+
+            .logo {
+                margin-bottom: 0;
+            }
+
+            .artikel p, .artikel h3, .artikel dl, .artikel-h1, .dlh4, .subhead, .titelImg, .procontraNav, .kapitelNav, .quellenverzeichnis, input, textarea {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 980px ){
+            .wrapper>header {
+                width: 86%;
+                margin: auto;
+            }
+
+            .themenHead {
+                margin-top: 1.5em;
+            }
+
+            .logo {
+                margin: 15px 0;
+            }
+
+            .slogan-h3 {
+                margin-left: 0;
+            }
+
+            .navlist li {
+                width: 100%;
+            }
+
+            .hauptNav {
+                width: 90%;
+                margin: auto;
+                max-height: 0;
+                overflow: hidden;
+            }
+
+            #hamburger {
+                display: block;
+            }
+
+            #hamburger:target ~ .hauptNav {
+                max-height: 800px;
+            }
+
+            #hamburger:not(:target) .close{display:none;}
+            #hamburger:target .open{display:none;}
+
+            #warum:hover .navInnen {
+                position: static;
+                margin-left: 2em;
+            }
+        }
+
+        @media screen and (max-width: 620px ){
+            .wrapper {
+                min-width: 100%;
+                margin: 0;
+            }
+
+            .wrapper>header, #hamburger {
+                width: calc(90% - 30px);
+            }
+        }
+       
+        @media screen and (max-width: 490px ){
+            .per-w-50 {
+                width: 50%;
+            }
+            
+            .artikel p, .artikel h3, .artikel dl, .artikel-h1, .dlh4, .subhead, .titelImg, .procontraNav, .kapitelNav, .quellenverzeichnis, input, textarea {
+                width: 100%;
+            }
+
+            .wrapper>header, #hamburger {
+                width: calc(100% - 30px);
+            }
+        }
+
+        
+.btw {
+    border-top: 1px solid #333;
+    margin-top: 1em;
+    padding-top: 1em;
+}
 
 /* POSITION: FIXED zurück zum portfolio */
 
@@ -597,4 +787,3 @@ html, body {
     text-decoration: none;
     color: #fff;
 }
-

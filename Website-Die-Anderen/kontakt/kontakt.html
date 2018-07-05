@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <title>Die Anderen - Das Warum - Moraltheorie</title>
+        <title>Die Anderen - Kontakt</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/raster-resp.css">
@@ -22,11 +22,16 @@
                     <h3 class="slogan-h3 float-right"><span>Die Anderen ... Seiten betrachten</span>Magazin für Diskurs und Meinungsbildung</h3>
                 </header>
 <!-- NAVIGATION  -->
+                <div id="hamburger">
+                    <a href="#hamburger" title="open" class="open">☰</a>
+                    <a href="#" title="close" class="close">✖</a>
+                </div>
+
                 <nav class="nav hauptNav">
                     <ul class="navlist clear">
                         <li tabindex="0"><a href="../index.html" title="Home">Start</a></li>
                         <li tabindex="0"><a href="../themen/themen.html" title="Themen">Themen</a></li>
-                        <li tabindex="0">
+                        <li tabindex="0" id="warum">
                             <a href="../warum/warum.html" title="Gründe für diese Website">Warum</a>
                             <ul class="navInnen">
                                 <li><a href="../warum/warum.html" title="Einleitung">Einleitung</a></li>
@@ -82,8 +87,8 @@
                                     </div>
                                     
                                     <div class="labelInputWrap">
-                                        <label for="text">Ihre Nachricht:</label>
-                                        <textarea name="text" rows="10" cols="60"></textarea>
+                                        <label for="nachricht">Ihre Nachricht:</label>
+                                        <textarea id="nachricht" name="nachricht" rows="10" cols="60"></textarea>
                                     </div>
                                     <input type="submit" value="Senden">
                             </form>
@@ -95,6 +100,7 @@
             <!-- **********************   -->
             </div><!-- wrapper -->
             <div class="zurueck"><a href="../../examples.html">< zurück zum Portfolio</a></div>
+
             <div class="gradient">
             </div><!-- gradient -->
     </body>
