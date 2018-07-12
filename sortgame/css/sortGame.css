@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2em;
+  background: rgb(200, 200, 200);
+}
+
+/* ALLGEMEINE STYLES */
+
+a {
+  text-decoration: none;
+}
+
+.clearAfter:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* allgemeine Gruppen */
+
+.wrapper {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+
+.column {
+  width: 30%;
+  min-height: 80vh;
+  margin-left: 5%;
+}
+
+.column:first-child {
+  margin-left: 0;
+}
+
+.box {
+  /* background-color: goldenrod; */
+  height: 3em;
+  margin: .75em 0;
+}
+
+.controls a {
+  display: table-cell;
+  padding: .2em;
+  padding-bottom: .5em;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 700;
+  transition: .35s;
+}
+
+.controls a:hover {
+  transition: .35s;
+}
+
+.controls.top:hover + .box {
+  opacity: .8;
+} 
+
+.controls .float-right {
+  text-align: right;
+}
+
+
+/* zum testen */
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.322);
+}

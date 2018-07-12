@@ -1,0 +1,26 @@
+{
+    "colorsets": [
+
+        {
+            "colorOne": "#68829E",
+            "colorTwo": "#AEBD38",
+            "colorThree": "#598234"
+        },
+        {
+            "colorOne": "#F98866",
+            "colorTwo": "#80BD9E",
+            "colorThree": "#89DA59"
+        },
+        {
+            "colorOne": "#FB6542",
+            "colorTwo": "#FFBB00",
+            "colorThree": "#3F681C"
+        },
+        {
+            "colorOne": "#5BC8AC",
+            "colorTwo": "#E6D72A",
+            "colorThree": "#F18D9E"
+        }
+
+    ]
+}
